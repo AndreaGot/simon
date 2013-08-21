@@ -93,6 +93,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FineGioco.xaml.cs">
+      <DependentUpon>FineGioco.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gioco.xaml.cs">
+      <DependentUpon>Gioco.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Informazioni.xaml.cs">
+      <DependentUpon>Informazioni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Istruzioni.xaml.cs">
+      <DependentUpon>Istruzioni.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -109,10 +121,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
@@ -140,6 +148,18 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Bottone1.png" />
+    <Content Include="Images\Bottone2.png" />
+    <Content Include="Images\Bottone3.png" />
+    <Content Include="Images\Bottone4.png" />
+    <Content Include="Busta.png" />
+    <Content Include="Facebook.png" />
+    <Content Include="MiaImg.jpg" />
+    <Content Include="Sounds\Bottone1.mp3" />
+    <Content Include="Sounds\Bottone2.mp3" />
+    <Content Include="Sounds\Bottone3.mp3" />
+    <Content Include="Sounds\Bottone4.mp3" />
+    <Content Include="Twitter.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">
@@ -147,6 +167,29 @@
       <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Page Include="FineGioco.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Gioco.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Informazioni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Istruzioni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
