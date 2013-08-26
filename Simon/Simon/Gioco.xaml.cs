@@ -73,14 +73,12 @@ namespace Simon
             {
                 if (sequenza == livello)
                 {
-                    livello++;
-                    sequenza = 0;
-                    Titolo.Text = "Livello " + livello;
-                    IniziaGioco();
+                    ProssimoLivello();
                 }
             }
             else
             {
+                PhoneApplicationService.Current.State["ris"] = livello - 1; 
                 NavigationService.Navigate(new Uri("/FineGioco.xaml", UriKind.Relative));
             }
 
@@ -102,14 +100,12 @@ namespace Simon
             {
                 if (sequenza == livello)
                 {
-                    livello++;
-                    sequenza = 0;
-                    Titolo.Text = "Livello " + livello;
-                    IniziaGioco();
+                    ProssimoLivello();
                 }
             }
             else
             {
+                PhoneApplicationService.Current.State["ris"] = livello - 1; 
                 NavigationService.Navigate(new Uri("/FineGioco.xaml", UriKind.Relative));
             }
 
@@ -132,14 +128,12 @@ namespace Simon
             {
                 if (sequenza == livello)
                 {
-                    livello++;
-                    sequenza = 0;
-                    Titolo.Text = "Livello " + livello;
-                    IniziaGioco();
+                    ProssimoLivello();
                 }
             }
             else
             {
+                PhoneApplicationService.Current.State["ris"] = livello - 1; 
                 NavigationService.Navigate(new Uri("/FineGioco.xaml", UriKind.Relative));
             }
 
@@ -160,14 +154,12 @@ namespace Simon
             {
                 if (sequenza == livello)
                 {
-                    livello++;
-                    sequenza = 0;
-                    Titolo.Text = "Livello " + livello;
-                    IniziaGioco();
+                    ProssimoLivello();
                 }
             }
             else
             {
+                PhoneApplicationService.Current.State["ris"] = livello -1;
                 NavigationService.Navigate(new Uri("/FineGioco.xaml", UriKind.Relative));
             }
             
@@ -252,6 +244,18 @@ namespace Simon
             else
                 return true;
         }
- 
+
+        void ProssimoLivello()
+        {
+
+            livello++;
+            sequenza = 0;
+            Titolo.Text = "Livello " + livello;
+            if(livello == 101)
+                NavigationService.Navigate(new Uri("/Vittoria.xaml", UriKind.Relative));
+            else
+                IniziaGioco();
+
+        }
     }
 }

@@ -11,12 +11,11 @@ using Microsoft.Phone.Tasks;
 
 namespace Simon
 {
-    public partial class FineGioco : PhoneApplicationPage
+    public partial class Vittoria : PhoneApplicationPage
     {
-        public FineGioco()
+        public Vittoria()
         {
             InitializeComponent();
-            Risultato.Text = "Livello " + PhoneApplicationService.Current.State["ris"].ToString();
         }
 
         private void ShareNewsArticle(string message)
@@ -28,7 +27,7 @@ namespace Simon
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ShareNewsArticle("Ho giocato a #SimoneDice e ho raggiunto il Livello " + PhoneApplicationService.Current.State["ris"].ToString() + "!");
+            ShareNewsArticle("Ho giocato a #SimoneDice e ho vinto, raggiungendo il Livello " + PhoneApplicationService.Current.State["ris"].ToString() + "! Riuscirai a battermi?");
         }
 
         private void Button_Click2(object sender, RoutedEventArgs e)

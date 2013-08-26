@@ -29,6 +29,7 @@ namespace Simon
 
         private void Istruzioni(object sender, RoutedEventArgs e)
         {
+            NavigationService.Navigate(new Uri("/Istruzioni.xaml", UriKind.Relative));
 
         }
 

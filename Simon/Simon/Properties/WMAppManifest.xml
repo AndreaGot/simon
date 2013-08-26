@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
-  <DefaultLanguage xmlns="" code="it-IT"/>
-  <App xmlns="" ProductID="{e70dd90e-5826-41a8-95d2-6e6db9507628}" Title="Simon" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Simon author" Description="Sample description" Publisher="Simon" PublisherID="{8e4b5194-b2de-4a44-853b-7931371fb811}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+  <DefaultLanguage xmlns="" code="it-IT" />
+  <App xmlns="" ProductID="{e70dd90e-5826-41a8-95d2-6e6db9507628}" Title="SimoneDice" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Simon author" Description="Il più famoso gioco &quot;mostra e ripeti&quot;!&#xD;&#xA;Il telefono mostrerà una sequenza, sarà tuo compito riprodurla!&#xD;&#xA;Riuscirai a premere i tasti giusti fino al livello numero 100? &#xD;&#xA;&#xD;&#xA;Provaci, e buon divertimento!&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;AGGIORNAMENTI&#xD;&#xA;&#xD;&#xA;In arrivo classifica e punteggi " Publisher="Simon" PublisherID="{8e4b5194-b2de-4a44-853b-7931371fb811}">
+    <IconPath IsRelative="true" IsResource="false">IconaNera.png</IconPath>
     <Capabilities>
-      <Capability Name="ID_CAP_NETWORKING"/>
-      <Capability Name="ID_CAP_MEDIALIB_AUDIO"/>
-      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK"/>
-      <Capability Name="ID_CAP_SENSORS"/>
-      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
     </Capabilities>
     <Tasks>
-      <DefaultTask Name="_default" NavigationPage="MainPage.xaml"/>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="SimonToken" TaskName="_default">
@@ -19,19 +19,22 @@
           <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>Simon</Title>
-          <BackContent></BackContent>
-          <BackBackgroundImageURI></BackBackgroundImageURI>
-          <BackTitle></BackTitle>
-          <DeviceLockImageURI></DeviceLockImageURI>
-          <HasLarge></HasLarge>
+          <Title>SimoneDice</Title>
+          <BackContent>
+          </BackContent>
+          <BackBackgroundImageURI>
+          </BackBackgroundImageURI>
+          <BackTitle>
+          </BackTitle>
+          <DeviceLockImageURI>
+          </DeviceLockImageURI>
+          <HasLarge>
+          </HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>
     <ScreenResolutions>
-      <ScreenResolution Name="ID_RESOLUTION_WVGA"/>
-      <ScreenResolution Name="ID_RESOLUTION_WXGA"/>
-      <ScreenResolution Name="ID_RESOLUTION_HD720P"/>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
     </ScreenResolutions>
   </App>
 </Deployment>

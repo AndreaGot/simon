@@ -28,6 +28,10 @@
 
         <!--ContentPanel - inserire ulteriore contenuto qui-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Button Content="Condividi" HorizontalAlignment="Center" Height="101" Margin="-2,315,-12,0" VerticalAlignment="Top" Width="470" Click="Button_Click" Background="#FF007ACC" FontSize="35" FontFamily="Segoe WP SemiLight"/>
+            <Button Content="Gioca Ancora" HorizontalAlignment="Center" Height="101" Margin="0,423,-14,0" VerticalAlignment="Top" Width="470" Click="Button_Click2" FontSize="35" FontFamily="Segoe WP SemiLight"/>
+            <TextBlock HorizontalAlignment="Center" Margin="82,10,88,0" TextWrapping="Wrap" Text="Hai raggiunto il " VerticalAlignment="Top" FontSize="40" Width="286" FontFamily="Segoe WP SemiLight"/>
+            <TextBlock x:Name="Risultato" Height="86" Margin="102,126,102,0" TextWrapping="Wrap" Text="Livello 10" VerticalAlignment="Top" FontSize="60" Foreground="#FF007ACC"/>
 
         </Grid>
     </Grid>

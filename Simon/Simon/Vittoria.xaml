@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="Simon.Istruzioni"
+    x:Class="Simon.Vittoria"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -23,25 +23,20 @@
         <!--TitlePanel contiene il nome dell'applicazione e il titolo della pagina-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="SimoneDice" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="Istruzioni" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="Hai Vinto!" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - inserire ulteriore contenuto qui-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock HorizontalAlignment="Left" Height="432" Margin="10,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="25">
-            	<Run Text="Benvenuto a SimoneDice!"/>
-            	<LineBreak/>
-            	<Run/>
-            	<LineBreak/>
-            	<Run Text="Il funzionamento è identico al gioco &quot;Simon&quot; della Milton Bradley: per ogni livello il gioco mostrerà una sequenza di colori e suoni, che poi l'utente sarà invitato a ripetere."/>
-            	<LineBreak/>
-            	<Run/>
-            	<LineBreak/>
-            	<Run Text="Più la sequenza si allunga, più sarà difficile ripeterla! Riuscirai ad arrivare al livello numero 100?"/>
-            	<LineBreak/>
-            	<Run/>
-            	<LineBreak/>
-            	<Run Text="Buon Divertimento!"/>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0">
+            <Button Content="Condividi" HorizontalAlignment="Center" Height="101" Margin="-2,315,-12,0" VerticalAlignment="Top" Width="470" Click="Button_Click" Background="#FF007ACC" FontSize="35" FontFamily="Segoe WP SemiLight"/>
+            <Button Content="Gioca Ancora" HorizontalAlignment="Center" Height="101" Margin="0,423,-14,0" VerticalAlignment="Top" Width="470" Click="Button_Click2" FontSize="35" FontFamily="Segoe WP SemiLight"/>
+            <TextBlock HorizontalAlignment="Center" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="40" Width="436" FontFamily="Segoe WP SemiLight" Height="123" TextWrapping="Wrap">
+            	<Run Text="Complimenti"/>
+            	<Run Text="! Sei arrivato alla fine del gioco, al"/>
+            </TextBlock>
+            <TextBlock x:Name="Risultato" Height="119" Margin="38,159,47,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" Foreground="#FF007ACC">
+            	<Run Text="Livello 10"/>
+            	<Run Text="0"/>
             </TextBlock>
 
         </Grid>
