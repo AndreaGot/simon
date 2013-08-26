@@ -8,6 +8,7 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.Windows.Threading;
+using System.Threading.Tasks;
 namespace Simon
 {
 
@@ -173,11 +174,13 @@ namespace Simon
         }
 
 
-        async IniziaGioco()
+        async void IniziaGioco()
         {
-            DispatcherTimer timer5 = new DispatcherTimer();
-            timer5.Interval = new TimeSpan(0, 0, 0, 3);
-            timer5.Start();
+            if (livello == 0)
+                await Task.Delay(2000);
+            else
+                await Task.Delay(1000);
+
             for (int i = 0; i < livello; i++)
             {
                 switch (tasti[i])
@@ -219,7 +222,26 @@ namespace Simon
                        
                         break;
                 }
-                await Task.Delay(1000);
+
+                if (livello < 4)
+                {
+                    await Task.Delay(1000);
+                }
+                else if (livello > 3 && livello < 9)
+                {
+                    await Task.Delay(800);
+                }
+                else if (livello > 8 && livello < 16)
+                {
+                    await Task.Delay(500);
+                }
+                else
+                {
+                    await Task.Delay(300);
+                }
+
+                
+
             }
 
         }
@@ -230,9 +252,6 @@ namespace Simon
             else
                 return true;
         }
-
-        void PerdiTempo(object sender, EventArgs e) { Button2.Opacity = 1; }
-
  
     }
 }
