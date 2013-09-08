@@ -221,15 +221,15 @@ namespace Simon
                 }
                 else if (livello > 3 && livello < 9)
                 {
-                    await Task.Delay(800);
+                    await Task.Delay(900);
                 }
                 else if (livello > 8 && livello < 16)
                 {
-                    await Task.Delay(500);
+                    await Task.Delay(750);
                 }
                 else
                 {
-                    await Task.Delay(300);
+                    await Task.Delay(600);
                 }
 
                 

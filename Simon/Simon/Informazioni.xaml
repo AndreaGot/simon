@@ -1,11 +1,12 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="Simon.Informazioni"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+    x:Class="Simon.Informazioni"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -46,9 +47,12 @@
             <TextBlock HorizontalAlignment="Left" Height="64" Margin="103,241,0,0" TextWrapping="Wrap" Text="@AndreaGot" VerticalAlignment="Top" Width="325" FontSize="35"/>
             <Image x:Name="imgMail" HorizontalAlignment="Left" Height="64" Margin="10,325,0,0" VerticalAlignment="Top" Width="64" Source="/Busta.png"/>
             <TextBlock HorizontalAlignment="Left" Height="64" Margin="103,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" FontSize="30">
-            	<Run Text="andreagot16@gmail."/>
-            	<Run Text="com"/>
+				<Run Text="andreagot16@gmail."/>
+				<Run Text="com"/>
             </TextBlock>
+
+            <UI:AdControl ApplicationId="e2b76c7a-9891-4f5e-8402-654d21d1a448" AdUnitId="10151169" HorizontalAlignment="Left" Height="80" Margin="-13,527,-11,0" VerticalAlignment="Top" Width="480"/>
+            <UI:AdControl ApplicationId="e2b76c7a-9891-4f5e-8402-654d21d1a448" AdUnitId="10151169" HorizontalAlignment="Left" Height="80" Margin="-13,442,-11,0" VerticalAlignment="Top" Width="480"/>
 
         </Grid>
     </Grid>

@@ -1,11 +1,12 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="Simon.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+    x:Class="Simon.MainPage"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -31,6 +32,8 @@
             <Button x:Name="btnGioca" Content="GIOCA" HorizontalAlignment="Left" Height="148" Margin="-14,10,-12,0" VerticalAlignment="Top" Width="482" Click="Gioca" FontSize="45" FontFamily="Segoe WP SemiLight" BorderThickness="2" Background="#FF007ACC"/>
             <Button x:Name="btnIstr" Content="Istruzioni" HorizontalAlignment="Left" Height="148" Margin="-14,163,-12,0" VerticalAlignment="Top" Width="482" Click="Istruzioni" FontSize="35" FontFamily="Segoe WP SemiLight" BorderThickness="2"/>
             <Button x:Name="btnInfo" Content="Informazioni " HorizontalAlignment="Left" Height="148" Margin="-14,311,-12,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="482" Click="Info" FontSize="35" FontFamily="Segoe WP SemiLight" BorderThickness="2"/>
+
+            <UI:AdControl ApplicationId="e2b76c7a-9891-4f5e-8402-654d21d1a448" AdUnitId="10151169" HorizontalAlignment="Left" Height="80" Margin="-14,496,-12,0" VerticalAlignment="Top" Width="482"/>
 
         </Grid>
     </Grid>
